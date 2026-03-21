@@ -1,8 +1,8 @@
 using System;
-using EasyToolkit.Core.Diagnostics;
 using EasyToolkit.Core.Patterns;
 using EasyToolkit.Core.Textual;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace EasyToolkit.Fluxion.Core.Implementations
 {
@@ -189,7 +189,7 @@ namespace EasyToolkit.Fluxion.Core.Implementations
         {
             PreviousDeltaTime = deltaTime;
             var stateKey = _state.CurrentStateKey;
-            Assert.IsTrue(stateKey != FluxState.Idle, "Flux is not started.");
+            Assert.AreNotEqual(stateKey, FluxState.Idle, "Flux is not started.");
 
             if (stateKey == FluxState.Completed)
             {

@@ -1,9 +1,9 @@
 using System;
-using EasyToolkit.Core.Diagnostics;
 using EasyToolkit.Core.Mathematics;
 using EasyToolkit.Fluxion.Eases;
 using EasyToolkit.Fluxion.Evaluators;
 using EasyToolkit.Fluxion.Profiles;
+using UnityEngine.Assertions;
 
 namespace EasyToolkit.Fluxion.Core.Implementations
 {
